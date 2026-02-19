@@ -28,21 +28,38 @@ p {
     font-size: 1.2em;
 }
 
+.canvas-wrapper {
+    position: relative;
+}
+
 canvas {
     background-color: #000;
     border: 2px solid #333;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
 }
 
-#game-over {
+#start-screen, #game-over {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #333;
+}
+
+#start-btn {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #00ff00;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .hidden {
