@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经典贪吃蛇 (Classic Snake)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-container">
+            <h1>得分: <span id="score">0</span></h1>
+            <p id="high-score">最高分: 0</p>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div id="game-over" class="hidden">
+            <h2>游戏结束</h2>
+            <p>按 "Enter" 重新开始</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

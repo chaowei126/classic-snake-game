@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+    position: relative;
+}
+
+.score-container {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+canvas {
+    background-color: #000;
+    border: 2px solid #333;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.hidden {
+    display: none;
+}
