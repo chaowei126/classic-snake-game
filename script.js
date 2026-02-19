@@ -144,10 +144,24 @@ function restartGame(event) {
     }
 }
 
+function setupButtonControls() {
+    document.getElementById('up-btn').addEventListener('click', () => changeDirectionByKey('ArrowUp'));
+    document.getElementById('down-btn').addEventListener('click', () => changeDirectionByKey('ArrowDown'));
+    document.getElementById('left-btn').addEventListener('click', () => changeDirectionByKey('ArrowLeft'));
+    document.getElementById('right-btn').addEventListener('click', () => changeDirectionByKey('ArrowRight'));
+}
+
+function changeDirectionByKey(key) {
+    // This function simulates a keydown event for the main logic
+    changeDirection({ key: key });
+}
+
 function main() {
     generateFood();
     updateGame();
+    setupButtonControls(); // Initialize button controls
 }
+
 
 document.addEventListener('keydown', changeDirection);
 document.addEventListener('keydown', restartGame);

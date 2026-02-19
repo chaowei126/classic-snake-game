@@ -48,3 +48,31 @@ canvas {
 .hidden {
     display: none;
 }
+
+#controls-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#controls-container button {
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+    background-color: #333;
+    color: #f0f0f0;
+    border: 2px solid #555;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    user-select: none; /* Prevents text selection on mobile */
+}
+
+#controls-container button:active {
+    background-color: #555;
+}
+
+.horizontal-btns {
+    display: flex;
+}
